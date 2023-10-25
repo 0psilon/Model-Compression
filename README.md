@@ -4,7 +4,7 @@ The [ViT](https://huggingface.co/google/vit-base-patch16-224) pre-trained base m
 
 | Methods                           | Model Size (MB) | Metric (F1-score) | Inference Time (1 sample) |
 | :--- | :---: | :---: | :---: |
-| Plain Model                       | 327.363         | 1.000             | 1.09 s ± 17 ms                     |
+| Plain Model                       | 327.363         | 1.000             | 1090 ms ± 17 ms                    |
 | Dynamic Quantization              | 84.413          | 1.000             | 413 ms ± 3.96 ms                   |
 | Unstructured Pruning              | 327.363         | 0.491             | 622 ms ± 14.5 ms                   |
 | Structured Pruning                | 327.363         | 0.494             | 708 ms ± 144 ms                    |
@@ -26,6 +26,3 @@ The ViT model was converted to ONNX and OpenVINO formats.
 
 #### HW_5
 The Hugging Face Optimum library was used for tuning the ViT model performance using Transformers pipelines and ONNX pipeline accelerations.
-
-#### Hw_6
-
